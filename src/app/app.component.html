@@ -1,20 +1,29 @@
-<div class="p-grid p-fluid p-justify-center">
-
-  <p-card header="Paraná" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-      <p>Casos de Covid:</p>
-  </p-card>
-
-  <p-card header="Paraná" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-      <p>Mortes de Covid:</p>
-  </p-card>
-
-  <p-card header="Paraná" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-      <p>Suspeitos de Covid:</p>
-  </p-card>
-
-  <p-card header="Paraná" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-      <p>Recuperados de Covid:</p>
-  </p-card>
-
+<div class="p-grid p-fluid">
+  <div class="p-col-12">
+    <h6>Dashboard Covid Paraná</h6>
+  </div>
+  <div class="p-col-12 p-md-6 p-lg-3">
+    <p-card styleClass="casos">
+      <h4 class="grow">Casos <i class="fas fa-file-medical-alt"></i></h4>
+      <p class="grow">{{dados && dados.cases}}</p>
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-6 p-lg-3">
+    <p-card styleClass="mortes">
+      <h4 class="grow">Mortes <i class="fas fa-skull-crossbones"></i></h4>
+      <p class="grow">{{dados && dados.deaths}}</p>
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-6 p-lg-3">
+    <p-card styleClass="suspeitos">
+      <h4 class="grow">Suspeitos <i class="fas fa-head-side-cough"></i></h4>
+      <p class="grow">{{dados && dados.suspects}}</p>
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-6 p-lg-3">
+    <p-card styleClass="recuperados">
+      <h4 class="grow">Recuperados <i class="fas fa-heart"></i></h4>
+      <p class="grow">{{dados && dados.refuses}}</p>
+    </p-card>
+  </div>
 </div>
-

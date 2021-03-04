@@ -14,8 +14,7 @@ export class CovidapiService {
     this.apiUrl = `https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/pr`;
    }
 
-
-    obterDados(){
+    obterDados(): Promise<any>{
       return this.http.get(`${this.apiUrl}`)
       .toPromise()
       .then( response => response);

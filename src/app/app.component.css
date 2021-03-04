@@ -1,0 +1,28 @@
+:host ::ng-deep
+.casos{
+  background-color: #74b9ff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}
+:host ::ng-deep
+.mortes{
+  background-color: #e17055;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}
+:host ::ng-deep
+.suspeitos{
+  background-color: #a29bfe;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}
+:host ::ng-deep
+.recuperados{
+  background-color: #00b894;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}

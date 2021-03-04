@@ -10,17 +10,19 @@ import { Covid } from './models/covid.model';
 export class AppComponent implements OnInit {
 
 
-  covid: Covid[];
+  dados: Covid;
 
   constructor(private covidService: CovidapiService) { }
 
 ngOnInit() {
 
+  this.carregarDados();
+
   }
 
   carregarDados(){
     this.covidService.obterDados()
-    .then(covid => this.covid  );
+    .then(dados => this.dados = dados );
   }
 }
 

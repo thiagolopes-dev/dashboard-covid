@@ -1,29 +1,40 @@
-<div class="p-grid p-fluid">
-  <div class="p-col-12">
-    <h6>Dashboard Covid Paraná</h6>
+    <main>
+      <div class="p-grid p-col-12">
+        <img [src]="logo" alt="Bandeira Paraná" height="100px">
+        <h6>Dashboard dados Covid Paraná</h6>
+      </div>
+
+    <div class="p-grid p-fluid">
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="casos">
+        <h4 class="grow">Casos <i class="fas fa-file-medical-alt"></i></h4>
+        <p class="grow">{{dados && dados.cases}}</p>
+      </p-card>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="mortes">
+        <h4 class="grow">Mortes <i class="fas fa-skull-crossbones"></i></h4>
+        <p class="grow">{{dados && dados.deaths}}</p>
+      </p-card>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="suspeitos">
+        <h4 class="grow">Suspeitos <i class="fas fa-head-side-cough"></i></h4>
+        <p class="grow">{{dados && dados.suspects}}</p>
+      </p-card>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="recuperados">
+        <h4 class="grow">Recuperados <i class="fas fa-heart"></i></h4>
+        <p class="grow">{{dados && dados.refuses}}</p>
+      </p-card>
+    </div>
+
+    <div class="footer">
+
+      <h3>Desenvolvido em aula com alunos do Curso de Análise e Desenvolvimento de Sistemas, juntamente com o professor Thiago Lopes.</h3>
+      <img class="acende grow" [src]="unopar" alt="Logo Unopar" width="100px">
+    </div>
+
   </div>
-  <div class="p-col-12 p-md-6 p-lg-3">
-    <p-card styleClass="casos">
-      <h4 class="grow">Casos <i class="fas fa-file-medical-alt"></i></h4>
-      <p class="grow">{{dados && dados.cases}}</p>
-    </p-card>
-  </div>
-  <div class="p-col-12 p-md-6 p-lg-3">
-    <p-card styleClass="mortes">
-      <h4 class="grow">Mortes <i class="fas fa-skull-crossbones"></i></h4>
-      <p class="grow">{{dados && dados.deaths}}</p>
-    </p-card>
-  </div>
-  <div class="p-col-12 p-md-6 p-lg-3">
-    <p-card styleClass="suspeitos">
-      <h4 class="grow">Suspeitos <i class="fas fa-head-side-cough"></i></h4>
-      <p class="grow">{{dados && dados.suspects}}</p>
-    </p-card>
-  </div>
-  <div class="p-col-12 p-md-6 p-lg-3">
-    <p-card styleClass="recuperados">
-      <h4 class="grow">Recuperados <i class="fas fa-heart"></i></h4>
-      <p class="grow">{{dados && dados.refuses}}</p>
-    </p-card>
-  </div>
-</div>
+    </main>

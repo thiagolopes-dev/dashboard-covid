@@ -11,6 +11,8 @@ export class AppComponent implements OnInit {
 
 
   dados: Covid;
+  logo: any = '/assets/images/parana.png';
+  unopar: any = '/assets/images/unopar.png';
 
   constructor(private covidService: CovidapiService) { }
 

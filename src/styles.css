@@ -17,44 +17,50 @@ main {
 .p-card {
   border-radius: 20px;
 }
-/* .p-card:hover {
-  color: #ffff;
-} */
 
 h6 {
   font-family: 'Abel', sans-serif;
   color: #ffff;
+  font-size: 40px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 40px;
   margin-left: 10px;
   margin-top: 20px;
+
+}
+h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+}
+p {
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 60px;
 }
 h3 {
   color: #ffff;
   font-family: 'Asap Condensed', sans-serif;
   font-size: 15px;
 }
-h4 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 30px;
+img {
+  border-radius: 20px;
 }
-p {
-  font-family: 'Asap Condensed', sans-serif;
-  font-size: 50px;
-}
-
 img.acende {
-
-  opacity: 0.4;
-  -moz-opacity: 0.5;
-  Filter: Alpha(Opacity=40)
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  Filter: Alpha(Opacity=30)
   }
 
 img.acende:hover {
   opacity: 1.0;
   -moz-opacity: 1.0;
   Filter: Alpha(Opacity=100)
+  }
+
+img.grow:hover
+  {
+          -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3);
   }
 
 h4.grow:hover
@@ -70,15 +76,6 @@ h4.grow:hover
           -ms-transform: scale(1.3);
           transform: scale(1.3);
   }
-  img.grow:hover
-  {
-          -webkit-transform: scale(1.3);
-          -ms-transform: scale(1.3);
-          transform: scale(1.3);
-  }
-  img {
-    border-radius: 20px;
-  }
   .footer {
     padding: 10px;
     position: fixed;
@@ -88,7 +85,7 @@ h4.grow:hover
     background-color: #1d232a;
     color: #9e9e9e;
     text-align: center;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One', sans-serif;
     letter-spacing: 1px;
     z-index: 1;
   }

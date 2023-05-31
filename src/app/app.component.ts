@@ -1,6 +1,6 @@
-import { CovidapiService } from './service/covidapi.service';
 import { Component, OnInit } from '@angular/core';
 import { Covid } from './models/covid.model';
+import { CovidapiService } from './service/covidapi.service';
 
 @Component({
   selector: 'app-root',
@@ -11,20 +11,20 @@ export class AppComponent implements OnInit {
 
 
   dados: Covid;
-  parana: any = '/assets/images/parana.png';
-  unopar: any = '/assets/images/unopar.png';
+  parana = '/assets/images/parana.png';
+  unopar = '/assets/images/unopar.png';
 
   constructor(private covidService: CovidapiService) { }
 
-ngOnInit() {
+  ngOnInit() {
 
-  this.carregarDados();
+    this.carregarDados();
 
   }
 
-  carregarDados(){
+  carregarDados() {
     this.covidService.obterDados()
-    .then(dados => this.dados = dados );
+      .then(dados => this.dados = dados);
   }
 }
 
